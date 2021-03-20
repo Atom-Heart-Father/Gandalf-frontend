@@ -1,13 +1,18 @@
 import { useState, useEffect } from 'react'
-import Dashboard from './pages/Dashboard.js'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SlideDrawer from './components/SlideDrawer.js'
 import Backdrop from './components/Backdrop.js'
 import AppBar from './components/AppBar.js'
+import Dashboard from './pages/Dashboard.js'
+import Whitelist from './pages/Whitelist.js'
+import Blacklist from './pages/Blacklist.js'
+import Settings from './pages/Settings.js'
 
 const App = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [backdrop, setBackdrop] = useState(null)
   const [width, setWidth] = useState(0)
+  const [active, setActive] = useState('')
   const drawerToggleClickHandler = () => setDrawerOpen(!drawerOpen)
   const backdropClickHandler = () => setDrawerOpen(false)
 
@@ -33,13 +38,34 @@ const App = () => {
     onResize()
   }, [width])
 
+  useEffect(() => {
+    const path = window.location.pathname
+    if (path === '/') setActive('Dashboard')
+    if (path === '/whitelist') setActive('Whitelist')
+    if (path === '/blacklist') setActive('Blacklist')
+    if (path === '/settings') setActive('Settings')
+  }, [setActive])
+
   return (
-    <>
+    <Router>
       <SlideDrawer show={drawerOpen} />
       {backdrop}
-      <AppBar toggle={drawerToggleClickHandler} width={width} />
-      <Dashboard />
-    </>
+      <AppBar toggle={drawerToggleClickHandler} active={active}/>
+      <Switch>
+        <Route exact path='/' >
+          <Dashboard />
+        </Route>
+        <Route exact path="/whitelist">
+          <Whitelist />
+        </Route>
+        <Route exact path="/blacklist">
+          <Blacklist />
+        </Route>
+        <Route exact path="/settings">
+          <Settings />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,6 +1,6 @@
 import './../styles/AppBar.css'
 
-const AppBar = ({ toggle, width }) => {
+const AppBar = ({ toggle, active }) => {
   return (
     <nav id='appbar'>
       <div className='hamburger' onClick={toggle}>
@@ -8,7 +8,7 @@ const AppBar = ({ toggle, width }) => {
         <div className='line2' />
         <div className='line3' />
       </div>
-      <h2>Hello</h2>
+      <h2>{active}</h2>
     </nav>
   )
 }

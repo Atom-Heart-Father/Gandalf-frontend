@@ -1,9 +1,9 @@
 import './../styles/SlideDrawer.css'
 import Logo from './../assets/gandalf.png'
-import { HiDesktopComputer } from 'react-icons/hi'
+import { RiComputerLine } from 'react-icons/ri'
 import { FaRegListAlt, FaListAlt } from 'react-icons/fa'
-import { FaBeer } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/fi'
+import { Link } from "react-router-dom";
 
 const SlideDrawer = ({ show }) => {
   let drawerClasses = 'side-drawer'
@@ -22,18 +22,18 @@ const SlideDrawer = ({ show }) => {
         <div className='nav-links'>
           <div className='link'>
             <a href='/'>
-              <HiDesktopComputer />
+              <RiComputerLine />
               <h3>Dashboard</h3>
             </a>
           </div>
           <div className='link'>
-            <a href='/'>
+            <a href='/whitelist'>
               <FaListAlt />
               <h3>WhiteList</h3>
             </a>
           </div>
           <div className='link'>
-            <a href='/'>
+            <a href='/blacklist'>
               <FaRegListAlt />
               <h3>BlackList</h3>
             </a>
@@ -41,7 +41,7 @@ const SlideDrawer = ({ show }) => {
         </div>
       </div>
       <div className='link' id='settings'>
-        <a href='/'>
+        <a href='/settings'>
           <FiSettings />
           <h3>Settings</h3>
         </a>
