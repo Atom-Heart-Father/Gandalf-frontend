@@ -5,8 +5,16 @@
 
 .settings-checkbox label{
   font-size: 1.25rem;
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
+  font-family: 'Inter', monospace;
+  font-weight: 500;
   padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'] {
+  margin-right: 1rem;
 }
 
 
