@@ -13,16 +13,21 @@ const List = ({ type }) => {
     event.preventDefault();
   }
 
-  let links = [
-    'https://dscvit.com/',
-    'https://www.stackoverflow.com/',
-    'https://dscv.it/',
-    'https://www.google.com/',
-    'https://katb.in/',
-    'https://sidv.dev/',
-    'https://www.youtube.com/',
-    'https://sphericalkat.dev/',
-  ]
+  let links = []
+  if (type === 'white')
+    links = [
+      'https://dscvit.com/',
+      'https://www.stackoverflow.com/',
+      'https://dscv.it/',
+      'https://www.google.com/',
+    ]
+  else
+    links = [
+      'https://katb.in/',
+      'https://sidv.dev/',
+      'https://www.youtube.com/',
+      'https://sphericalkat.dev/',
+    ]
   return (
     <>
       <form className='url-form' onSubmit={handleSubmit}>
