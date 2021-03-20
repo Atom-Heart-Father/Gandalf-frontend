@@ -1,13 +1,17 @@
+import { useState } from 'react'
+import Switch from './../components/Switch'
 import './../styles/Settings.css'
 
 const Settings = () => {
-
+  
+  const [value, setValue] = useState(false);
   const categories = [
     'Adult Content',
     'Entertainment',
     'Social Media',
     'Coding',
   ]
+
 
   return (
     <section>
@@ -26,6 +30,10 @@ const Settings = () => {
           }
           <input type='submit' value='Save'/>
         </div>
+      </div>
+      <div className='list-container toggle'>
+          <h4>Toggle Proxy Status</h4>
+          <Switch isOn={value} handleToggle={() => setValue(!value)} />
       </div>
     </section>
   )

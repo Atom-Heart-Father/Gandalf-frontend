@@ -44,7 +44,7 @@ const Dashboard = () => {
     },
     data: [{
       type: "line",
-      color: 'darkslategrey',
+      color: '#000',
       dataPoints: [
         { x: new Date(Date.UTC(2021, 3, 20, 1, 0)), y: 39 },
         { x: new Date(Date.UTC(2021, 3, 20, 2, 0)), y: 51 },
