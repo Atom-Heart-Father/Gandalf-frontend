@@ -32,6 +32,9 @@ input[type='checkbox'] {
   margin-right: 1rem;
 }
 
+input[type='checkbox'][checked='false'] {
+  color: grey;
+}
 
 input[type='submit'][value="Save"] {
   width: max-content;

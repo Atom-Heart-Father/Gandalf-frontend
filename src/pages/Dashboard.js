@@ -5,8 +5,7 @@ const Dashboard = () => {
   var CanvasJS = CanvasJSReact.CanvasJS;
   var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-  CanvasJS.addColorSet("blueShades",
-    [//colorSet Array
+  CanvasJS.addColorSet("blueShades", [//colorSet Array
       "#33567f",
       "#3a6190",
       "#4774ab",
@@ -14,8 +13,7 @@ const Dashboard = () => {
       "#a3b5d4",
     ]);
 
-  CanvasJS.addColorSet("redShades",
-    [//colorSet Array
+  CanvasJS.addColorSet("redShades", [//colorSet Array
       "#a70000",
       "#de0404",
       "#ff5252",

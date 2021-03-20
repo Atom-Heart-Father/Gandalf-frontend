@@ -6,10 +6,10 @@ const Settings = () => {
   
   const [value, setValue] = useState(false);
   const categories = [
-    'Adult Content',
-    'Entertainment',
-    'Social Media',
-    'Coding',
+    ['Adult Content', true],
+    ['Entertainment', false],
+    ['Social Media', false],
+    ['Code', false],
   ]
 
 
@@ -21,9 +21,9 @@ const Settings = () => {
           {
             categories.map((category) => {
               return (
-                <label>
-                  <input name={category} type="checkbox" />
-                  {category}
+                <label style={{ color:`${!category[1] && 'lightgrey'}`}}>
+                  <input name={category[0]} type="checkbox" checked={category[1]}/>
+                  {category[0]}
                 </label>
               )
             })
