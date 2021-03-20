@@ -1,4 +1,5 @@
-﻿/*
+﻿// eslint-disable-next-line
+/*
 CanvasJS React Charts - https://canvasjs.com/
 Copyright 2021 fenopix
 
