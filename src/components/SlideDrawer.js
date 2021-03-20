@@ -3,7 +3,6 @@ import Logo from './../assets/gandalf.png'
 import { RiComputerLine } from 'react-icons/ri'
 import { FaRegListAlt, FaListAlt } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/fi'
-import { Link } from "react-router-dom";
 
 const SlideDrawer = ({ show, active }) => {
   let drawerClasses = 'side-drawer'

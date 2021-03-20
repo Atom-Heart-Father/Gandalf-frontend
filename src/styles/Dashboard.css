@@ -1,0 +1,23 @@
+#dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container.dashboard {
+  margin-bottom: 5rem;
+  padding: 2rem;
+  display: flex;
+}
+
+.pie-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pie-row div {
+  width: 40%;
+}
+
+.canvasjs-chart-credit {
+  display: none;
+}

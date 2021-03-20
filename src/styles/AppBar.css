@@ -24,8 +24,8 @@
 .hamburger div {
   width: 25px;
   height: 2px;
-  /* background-color: var(--light); */
-  background-color: var(--dark);
+  background-color: var(--light);
+  /* background-color: var(--dark); */
   margin: 5px;
   transition: all 0.5s ease-in-out;
 }

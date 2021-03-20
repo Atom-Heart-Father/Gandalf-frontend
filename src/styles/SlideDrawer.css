@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 .side-drawer {
   height: 100%;
@@ -6,7 +6,7 @@
   color: var(--light); */
   background-color: var(--light);
   color: #348dfe;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 15rem;
@@ -42,9 +42,9 @@
 
 .logo-row h2 {
   margin: 0 0.5rem;
-  font-size: 2.5rem;
+  font-size: 2.125rem;
   font-weight: 600;
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .logo-row img {

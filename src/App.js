@@ -50,7 +50,7 @@ const App = () => {
     <Router>
       <SlideDrawer show={drawerOpen} active={active} />
       {backdrop}
-      <AppBar toggle={drawerToggleClickHandler} active={active}/>
+      <AppBar toggle={drawerToggleClickHandler} active={active} width={width}/>
       <Switch>
         <Route exact path='/' >
           <Dashboard />
