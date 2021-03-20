@@ -1,7 +1,9 @@
+import List from './../components/List.js'
+
 const Blacklist = () => {
   return (
     <section>
-      Blacklist
+      <List type='black'/>
     </section>
   )
 }

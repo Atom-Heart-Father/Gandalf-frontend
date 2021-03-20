@@ -1,7 +1,9 @@
+import List from './../components/List.js'
+
 const Whitelist = () => {
   return (
     <section>
-      Whitelist
+      <List type='white'/>
     </section>
   )
 }

@@ -48,7 +48,7 @@ const App = () => {
 
   return (
     <Router>
-      <SlideDrawer show={drawerOpen} />
+      <SlideDrawer show={drawerOpen} active={active} />
       {backdrop}
       <AppBar toggle={drawerToggleClickHandler} active={active}/>
       <Switch>

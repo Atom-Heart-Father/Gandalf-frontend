@@ -8,7 +8,6 @@ const AppBar = ({ toggle, active }) => {
         <div className='line2' />
         <div className='line3' />
       </div>
-      <h2>{active}</h2>
     </nav>
   )
 }

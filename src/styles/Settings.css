@@ -1,0 +1,16 @@
+.settings-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-checkbox label{
+  font-size: 1.25rem;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 1rem 0;
+}
+
+
+input[type='submit'][value="Save"] {
+  width: max-content;
+  margin: 1rem 0.25rem;
+}
