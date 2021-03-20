@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Dashboard from './pages/Dashboard.js'
 import SlideDrawer from './components/SlideDrawer.js'
 import Backdrop from './components/Backdrop.js'
+import AppBar from './components/AppBar.js'
 
 const App = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -14,6 +15,7 @@ const App = () => {
     if (width > 1024) {
       setDrawerOpen(true)
       let sections = document.getElementsByTagName('section')
+      document.getElementById('appbar').style.marginLeft = '15rem'
       Array.from(sections).forEach((section) => {
         section.style.marginLeft = '15rem'
       })
@@ -35,7 +37,8 @@ const App = () => {
     <>
       <SlideDrawer show={drawerOpen} />
       {backdrop}
-      <Dashboard toggle={drawerToggleClickHandler} />
+      <AppBar toggle={drawerToggleClickHandler} width={width} />
+      <Dashboard />
     </>
   );
 }

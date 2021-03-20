@@ -1,4 +1,5 @@
 import './../styles/SlideDrawer.css'
+import Logo from './../assets/gandalf.png'
 
 const SlideDrawer = ({ show }) => {
   let drawerClasses = 'side-drawer'
@@ -7,7 +8,10 @@ const SlideDrawer = ({ show }) => {
 
   return (
     <div className={drawerClasses}>
-      <h1>Hello, I am slider</h1>
+      <div className='logo-row'>
+        <img src={Logo} alt='Gandalf' />
+        <h2>Gandalf</h2>
+      </div>
     </div>
   )
 }

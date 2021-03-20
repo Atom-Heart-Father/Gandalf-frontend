@@ -1,7 +1,6 @@
-const Dashboard = ({ toggle }) => {
+const Dashboard = () => {
   return (
     <section>
-      <button onClick={toggle}>Click Me!</button>
     </section>
   )
 }

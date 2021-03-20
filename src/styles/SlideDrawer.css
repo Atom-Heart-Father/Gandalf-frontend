@@ -1,15 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
 .side-drawer {
   height: 100%;
-  background: white;
+  background-color: var(--dark);
+  color: var(--light);
   position: fixed;
   top: 0;
   left: 0;
   width: 15rem;
   z-index: 200;
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  padding: 0.75rem 0;
+  /* box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5); */
+  border-right: 1px var(--dark) solid;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
 .side-drawer.open {
   transform: translateX(0);
+}
+
+.logo-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-row h2 {
+  margin: 0 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.logo-row img {
+  width: 2.5rem;
 }
