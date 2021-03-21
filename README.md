@@ -1,3 +1,16 @@
+<p align="center">
+<a href="github.com/Atom-Heart-Father/Gandalf">
+	<img src="assets/GandalfLogo.png" alt="Gandalf Logo" width="350px"/>
+</a>
+	<h1 align="center"> Gandalf </h1>
+	<h3 align="center"> <i>"Thou shall not pass!"<i> </h3>
+</p>
+
+Customizable Smart Firewall filtering websites on the basis of content in the website.
+> Frontend for Gandalf.
+
+[Head Over to the Main Repository](https://github.com/Atom-Heart-Father/Gandalf)
+ 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +81,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<p align="center">
+	Made with :heart: by Team <a href="https://github.com/Atom-Heart-Father">Atom Heart Father</a>
+</p>
