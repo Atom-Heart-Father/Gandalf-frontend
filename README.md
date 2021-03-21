@@ -1,6 +1,6 @@
 <p align="center">
 <a href="github.com/Atom-Heart-Father/Gandalf">
-	<img src="assets/GandalfLogo.png" alt="Gandalf Logo" width="350px"/>
+	<img src="https://github.com/Atom-Heart-Father/Gandalf/blob/main/assets/GandalfLogo.png" alt="Gandalf Logo" width="350px"/>
 </a>
 	<h1 align="center"> Gandalf </h1>
 	<h3 align="center"> <i>"Thou shall not pass!"<i> </h3>
